@@ -20,9 +20,5 @@ jobs:
         name: install dependencies
       - run: npm run test
         name: run tests
-      - uses: ArtiomTr/jest-coverage-report-action@v2
-        with:
-          coverage-file: reports/coverage-final.json
-
 
 
