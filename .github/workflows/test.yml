@@ -5,6 +5,10 @@ on: [push]
 
 jobs:
   test:
+    permissions:
+      contents: write
+      pull-requests: write
+      checks: write
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -16,7 +20,9 @@ jobs:
         name: install dependencies
       - run: npm run test
         name: run tests
-
+      - uses: ArtiomTr/jest-coverage-report-action@v2
+        with:
+          coverage-file: reports/coverage-final.json
 
 
 
