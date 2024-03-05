@@ -8,4 +8,5 @@ function myIntegers(arr) {
     arr.sort(comparator);
     return arr;
 }
+
 module.exports = myIntegers;

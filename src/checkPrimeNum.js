@@ -1,11 +1,4 @@
-// Write a function that prints number between 1 and 5.
-/*function myNumber() {
-    for (let x = 1; x <= 5; x++) {
-        console.log(x);
-    }
-}
-myNumber();
-*/
+//Write a function that takes an argument and determines whether the argument is a prime number.
 function testPrimeNum(n) {
     if (n <= 1) {
         return false;
@@ -22,4 +15,4 @@ function testPrimeNum(n) {
         return true;
     }
 }
-console.log(testPrimeNum(-2));
+console.log(testPrimeNum(14));

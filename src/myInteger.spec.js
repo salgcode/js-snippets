@@ -1,3 +1,4 @@
+let findMax = require("./myMaxNumber");
 let myIntegers = require("./myInteger");
 let { expect } = require('@jest/globals');
 
@@ -11,5 +12,5 @@ test('check default sort works', function () {
     let output = myIntegers(input);
     expect(output[0]).toBe(1);
     expect(output.length).toBe(input.length);
-    expect(output[output.length - 1]).toBe(22);
+    expect(output[output.length - 1]).toBe(findMax(output));
 })
